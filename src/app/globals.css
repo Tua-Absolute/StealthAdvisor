@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode */
+    --color-surface: #ffffff;
+    --color-surface-container: #f4f4f5;
+    --color-surface-elevated: #ffffff;
+    --color-border-default: #e4e4e7;
+    --color-foreground-emphasis: #18181b;
+    --color-foreground-default: #3f3f46;
+    --color-foreground-de-emphasis: #71717a;
+  }
+
+  .dark {
+    --color-surface: #0f1017;
+    --color-surface-container: #17181f;
+    --color-surface-elevated: #222328;
+    --color-border-default: #2a2b36;
+    --color-foreground-emphasis: #e6e8f0;
+    --color-foreground-default: #c9cbd1;
+    --color-foreground-de-emphasis: #adafb8;
+  }
+
+  body {
+    @apply bg-surface text-foreground-default antialiased;
+  }
+}
+
+@layer components {
+  .icon-button {
+    @apply p-2 rounded-lg transition-colors text-gray-400 hover:bg-black/5 dark:hover:bg-white/5 hover:text-foreground-emphasis;
+  }
+}
