@@ -9,13 +9,13 @@ export function Header() {
   const { theme, toggleTheme } = useThemeStore();
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border-default bg-surface/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 w-full border-b border-red-500/20 bg-surface/80 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <ShieldCheck className="h-6 w-6 text-blue-500" />
+            <ShieldCheck className="h-6 w-6 text-red-500" />
             <span className="text-lg font-semibold text-foreground-emphasis hidden sm:block">
-              StealthAdvisor
+              Stealth<span className="text-red-500">Advisor</span>
             </span>
           </Link>
 

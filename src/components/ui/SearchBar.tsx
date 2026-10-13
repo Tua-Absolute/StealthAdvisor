@@ -91,7 +91,7 @@ export function SearchBar() {
           onKeyDown={handleKeyDown}
           onFocus={() => results.length > 0 && setIsOpen(true)}
           placeholder="Analyze a ticker, e.g. AAPL"
-          className="w-full pl-10 pr-10 py-2.5 bg-surface-container border border-border-default rounded-xl text-sm text-foreground-emphasis placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-colors"
+          className="w-full pl-10 pr-10 py-2.5 bg-surface-container border border-border-default rounded-xl text-sm text-foreground-emphasis placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500 transition-colors"
         />
         {query && (
           <button

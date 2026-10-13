@@ -64,7 +64,7 @@ export default function Dashboard() {
         <Card className="flex flex-col gap-4">
           <div className="flex items-center justify-between">
             <h3 className="text-base font-medium text-foreground-emphasis">Your Risk Profile</h3>
-            <Link href="/profile" className="flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300">
+            <Link href="/profile" className="flex items-center gap-1 text-sm text-red-400 hover:text-red-300">
               {takenQuiz ? 'Retake quiz' : 'Take the quiz'} <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

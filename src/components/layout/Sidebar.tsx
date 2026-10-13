@@ -37,7 +37,7 @@ export function Sidebar() {
             className={cn(
               'flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-colors',
               isActive(item)
-                ? 'bg-blue-500/10 text-blue-400'
+                ? 'bg-red-500/10 text-red-400'
                 : 'text-gray-400 hover:bg-white/5 hover:text-foreground-emphasis'
             )}
           >
@@ -68,7 +68,7 @@ export function MobileNav() {
             href={item.href}
             className={cn(
               'flex flex-col items-center gap-1 py-2.5 px-2 text-[11px] font-medium',
-              isActive(item) ? 'text-blue-400' : 'text-gray-400'
+              isActive(item) ? 'text-red-400' : 'text-gray-400'
             )}
           >
             <item.icon className="h-5 w-5" />

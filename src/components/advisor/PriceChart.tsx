@@ -27,8 +27,8 @@ export function PriceChart({ bars }: { bars: Bar[] }) {
       <div className="flex items-center justify-between gap-4 flex-wrap">
         <div className="flex items-center gap-4 text-xs text-gray-400">
           <span className="flex items-center gap-1.5"><span className="h-0.5 w-4 rounded" style={{ background: stroke }} />Price</span>
-          <span className="flex items-center gap-1.5"><span className="h-0.5 w-4 rounded bg-blue-400" />50-day avg</span>
-          <span className="flex items-center gap-1.5"><span className="h-0.5 w-4 rounded bg-violet-400" />200-day avg</span>
+          <span className="flex items-center gap-1.5"><span className="h-0.5 w-4 rounded bg-zinc-300" />50-day avg</span>
+          <span className="flex items-center gap-1.5"><span className="h-0.5 w-4 rounded bg-zinc-500" />200-day avg</span>
         </div>
         <div className="flex gap-1 rounded-xl bg-surface p-1 border border-border-default">
           {(Object.keys(RANGES) as Range[]).map((r) => (
@@ -37,7 +37,7 @@ export function PriceChart({ bars }: { bars: Bar[] }) {
               onClick={() => setRange(r)}
               className={cn(
                 'px-3 py-1 rounded-lg text-xs font-medium transition-colors',
-                r === range ? 'bg-blue-500/10 text-blue-400' : 'text-gray-400 hover:text-foreground-emphasis'
+                r === range ? 'bg-red-500/10 text-red-400' : 'text-gray-400 hover:text-foreground-emphasis'
               )}
             >
               {r}
@@ -80,8 +80,8 @@ export function PriceChart({ bars }: { bars: Bar[] }) {
                 name === 'close' ? 'Price' : name === 'sma50' ? '50-day avg' : '200-day avg',
               ]}
             />
-            <Line type="monotone" dataKey="sma200" stroke="#a78bfa" strokeWidth={1.25} dot={false} connectNulls />
-            <Line type="monotone" dataKey="sma50" stroke="#60a5fa" strokeWidth={1.25} dot={false} connectNulls />
+            <Line type="monotone" dataKey="sma200" stroke="#71717a" strokeWidth={1.25} dot={false} connectNulls />
+            <Line type="monotone" dataKey="sma50" stroke="#d4d4d8" strokeWidth={1.25} dot={false} connectNulls />
             <Line type="monotone" dataKey="close" stroke={stroke} strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>

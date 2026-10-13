@@ -3,7 +3,7 @@
 import { Cell, Pie, PieChart, ResponsiveContainer } from 'recharts';
 import type { Allocation } from '@/lib/advisor/profile';
 
-const COLORS = ['#3b82f6', '#34d399', '#fbbf24', '#a78bfa'];
+const COLORS = ['#dc2626', '#e4e4e7', '#71717a', '#f87171'];
 
 export function AllocationDonut({ allocation }: { allocation: Allocation[] }) {
   return (

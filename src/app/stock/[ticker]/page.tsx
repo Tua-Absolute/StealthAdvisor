@@ -41,7 +41,7 @@ export default function AnalyzePage({ params }: { params: { ticker: string } }) 
         <h1 className="text-xl font-semibold text-foreground-emphasis">{ticker}</h1>
         <p className="text-sm text-gray-400">
           {item.error?.message ?? 'No price data is available for this ticker.'} Check the symbol, or try one like{' '}
-          <Link href="/stock/AAPL" className="text-blue-400">AAPL</Link>.
+          <Link href="/stock/AAPL" className="text-red-400">AAPL</Link>.
         </p>
       </Card>
     );
@@ -102,7 +102,7 @@ export default function AnalyzePage({ params }: { params: { ticker: string } }) 
 
       <Card className="flex flex-col gap-3">
         <h3 className="flex items-center gap-2 text-base font-medium text-foreground-emphasis">
-          <MessageSquareText className="h-5 w-5 text-blue-500" /> Advisory statements
+          <MessageSquareText className="h-5 w-5 text-red-500" /> Advisory statements
         </h3>
         <ul className="flex flex-col gap-2 list-disc pl-5 text-sm text-foreground-default leading-relaxed">
           {analysis.rules.map((r) => <li key={r.id}>{r.statement}</li>)}

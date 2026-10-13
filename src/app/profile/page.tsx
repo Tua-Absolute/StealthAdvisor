@@ -59,7 +59,7 @@ export default function ProfilePage() {
                   className={cn(
                     'rounded-xl border px-4 py-3 text-left text-sm transition-colors',
                     answers[q.id] === oi
-                      ? 'border-blue-500 bg-blue-500/10 text-blue-400'
+                      ? 'border-red-500 bg-red-500/10 text-red-400'
                       : 'border-border-default text-foreground-default hover:bg-white/5'
                   )}
                 >
@@ -72,7 +72,7 @@ export default function ProfilePage() {
         <button
           onClick={submit}
           disabled={!complete}
-          className="self-start rounded-xl bg-blue-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-600 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="self-start rounded-xl bg-red-500 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-red-600 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {takenQuiz ? 'Update my profile' : 'See my profile'}
         </button>
